@@ -6,8 +6,8 @@ amount = int(input("Enter amount to pay: "))
 #upi://pay?pa=UPI_ID&pn=NAME&am=AMOUNT&cu=CURRENCY&tn=MESSAGE
 
 phonepe_url = f'upi://pay?pa={upi_id}&pn=Recipient%20Name&am={amount}'
-googlepay_url = f'upi://pay?pa={upi_id}&pn=Recipient%20Name'
-paytm_url = f'upi://pay?pa={upi_id}&pn=Recipient%20Name'
+googlepay_url = f'upi://pay?pa={upi_id}&pn=Recipient%20Name={amount}'
+paytm_url = f'upi://pay?pa={upi_id}&pn=Recipient%20Name={amount}'
 
 #making qr codes
 phonepe_qr = qrcode.make(phonepe_url)
