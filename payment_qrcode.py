@@ -1,11 +1,11 @@
 import qrcode
 
 upi_id = input("Enter your UPI ID: ")
-
+amount = int(input("Enter amount to pay: "))
 #general payment url
 #upi://pay?pa=UPI_ID&pn=NAME&am=AMOUNT&cu=CURRENCY&tn=MESSAGE
 
-phonepe_url = f'upi://pay?pa={upi_id}&pn=Recipient%20Name'
+phonepe_url = f'upi://pay?pa={upi_id}&pn=Recipient%20Name&am={amount}'
 googlepay_url = f'upi://pay?pa={upi_id}&pn=Recipient%20Name'
 paytm_url = f'upi://pay?pa={upi_id}&pn=Recipient%20Name'
 
